@@ -1,0 +1,34 @@
+# ── Large generated outputs ──
+output/*.tsv
+output/candidate_pairs*
+output/train_candidate_pairs*
+
+# ── Normalized intermediate data ──
+Dataset/student_resource/dataset/test/normalized/
+Dataset/student_resource/dataset/train/normalized/
+
+# ── Raw large dataset files ──
+Dataset/student_resource/dataset/**/*.tsv
+
+# ── macOS junk ──
+**/__MACOSX/
+**/.DS_Store
+
+# ── Python cache ──
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ──
+venv/
+.venv/
+env/
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── Editors ──
+.vscode/
+.idea/

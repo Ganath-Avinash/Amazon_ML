@@ -1,0 +1,139 @@
+{
+  "recall": {
+    "total_true_matches": 7638365,
+    "found_in_candidates": 3845396,
+    "missed": 3792969,
+    "blocking_recall": 0.503432,
+    "n_entities_with_miss": 10,
+    "zero_cand_misses": 18143,
+    "sample_misses": [
+      {
+        "s1_id": "S1-965667",
+        "n_true": 5,
+        "n_found": 3,
+        "n_missed": 2,
+        "missed_sample": [
+          "S3-11291185",
+          "S3-775321672"
+        ],
+        "n_candidates": 200
+      },
+      {
+        "s1_id": "S1-55344266",
+        "n_true": 4,
+        "n_found": 2,
+        "n_missed": 2,
+        "missed_sample": [
+          "S2-249013014",
+          "S3-384364074"
+        ],
+        "n_candidates": 62
+      },
+      {
+        "s1_id": "S1-656753428",
+        "n_true": 3,
+        "n_found": 0,
+        "n_missed": 3,
+        "missed_sample": [
+          "S2-153058913",
+          "S3-679606215",
+          "S2-24659151"
+        ],
+        "n_candidates": 70
+      },
+      {
+        "s1_id": "S1-102811957",
+        "n_true": 6,
+        "n_found": 3,
+        "n_missed": 3,
+        "missed_sample": [
+          "S2-625774905",
+          "S3-728090388",
+          "S2-553508714"
+        ],
+        "n_candidates": 35
+      },
+      {
+        "s1_id": "S1-318373630",
+        "n_true": 2,
+        "n_found": 1,
+        "n_missed": 1,
+        "missed_sample": [
+          "S2-660036492"
+        ],
+        "n_candidates": 82
+      },
+      {
+        "s1_id": "S1-86989137",
+        "n_true": 2,
+        "n_found": 1,
+        "n_missed": 1,
+        "missed_sample": [
+          "S3-274817120"
+        ],
+        "n_candidates": 37
+      },
+      {
+        "s1_id": "S1-29845983",
+        "n_true": 2,
+        "n_found": 1,
+        "n_missed": 1,
+        "missed_sample": [
+          "S3-588502663"
+        ],
+        "n_candidates": 99
+      },
+      {
+        "s1_id": "S1-789009573",
+        "n_true": 3,
+        "n_found": 1,
+        "n_missed": 2,
+        "missed_sample": [
+          "S2-383871912",
+          "S3-74481402"
+        ],
+        "n_candidates": 200
+      },
+      {
+        "s1_id": "S1-730934468",
+        "n_true": 2,
+        "n_found": 1,
+        "n_missed": 1,
+        "missed_sample": [
+          "S3-352439310"
+        ],
+        "n_candidates": 1
+      },
+      {
+        "s1_id": "S1-7293388",
+        "n_true": 4,
+        "n_found": 2,
+        "n_missed": 2,
+        "missed_sample": [
+          "S3-523120965",
+          "S2-442723188"
+        ],
+        "n_candidates": 5
+      }
+    ]
+  },
+  "train_candidates": {
+    "n_entities": 2206821,
+    "total_pairs": 173373700,
+    "avg_per_entity": 78.56,
+    "zero_candidate": 26075,
+    "distribution": {
+      "0": 26075,
+      "1-10": 751075,
+      "11-50": 399125,
+      "51-100": 308179,
+      "101-200": 722367,
+      "200+": 0
+    }
+  },
+  "test_candidates": {
+    "n_entities": 1732544,
+    "total_pairs": 149099591,
+    "avg_per_entity": 86.06
+  }
+}

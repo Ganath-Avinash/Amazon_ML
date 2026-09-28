@@ -1,0 +1,327 @@
+{
+  "shapes": {
+    "train_source1": {
+      "rows": 2206821,
+      "cols": 4,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ]
+    },
+    "train_source2": {
+      "rows": 5034616,
+      "cols": 4,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ]
+    },
+    "train_source3": {
+      "rows": 5285603,
+      "cols": 4,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ]
+    },
+    "train_gt": {
+      "rows": 2206821,
+      "cols": 2,
+      "columns": [
+        "source1_entity_id",
+        "matched_entity_ids"
+      ]
+    },
+    "test_source1": {
+      "rows": 1732544,
+      "cols": 4,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ]
+    },
+    "test_source2": {
+      "rows": 4887273,
+      "cols": 4,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ]
+    },
+    "test_source3": {
+      "rows": 5082316,
+      "cols": 4,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ]
+    }
+  },
+  "null_rates": {
+    "train_source1": {
+      "entity_id": 0.0,
+      "business_name": 0.0,
+      "business_address": 0.0,
+      "country": 0.0
+    },
+    "train_source2": {
+      "entity_id": 0.0,
+      "business_name": 0.0,
+      "business_address": 3.36,
+      "country": 0.0
+    },
+    "train_source3": {
+      "entity_id": 0.0,
+      "business_name": 0.0,
+      "business_address": 3.33,
+      "country": 0.0
+    },
+    "train_gt": {
+      "source1_entity_id": 0.0,
+      "matched_entity_ids": 5.58
+    },
+    "test_source1": {
+      "entity_id": 0.0,
+      "business_name": 0.0,
+      "business_address": 0.0,
+      "country": 0.0
+    }
+  },
+  "country_distribution": {
+    "train_source1": [
+      [
+        "US",
+        1323633
+      ],
+      [
+        "India",
+        883188
+      ]
+    ],
+    "train_source2": [
+      [
+        "US",
+        3016817
+      ],
+      [
+        "India",
+        2017799
+      ]
+    ],
+    "train_source3": [
+      [
+        "US",
+        3170056
+      ],
+      [
+        "India",
+        2115547
+      ]
+    ],
+    "test_source1": [
+      [
+        "India",
+        809986
+      ],
+      [
+        "US",
+        663106
+      ],
+      [
+        "France",
+        259452
+      ]
+    ],
+    "test_source2": [
+      [
+        "India",
+        2312565
+      ],
+      [
+        "US",
+        1871330
+      ],
+      [
+        "France",
+        703378
+      ]
+    ],
+    "test_source3": [
+      [
+        "India",
+        2405000
+      ],
+      [
+        "US",
+        1945701
+      ],
+      [
+        "France",
+        731615
+      ]
+    ]
+  },
+  "match_stats": {
+    "total_s1_entities": 2206821,
+    "singletons_count": 0,
+    "singletons_pct": 0.0,
+    "mean_matches": 3.666,
+    "median_matches": 4.0,
+    "max_matches": 11,
+    "min_matches": 1,
+    "p25": 3.0,
+    "p75": 5.0,
+    "p95": 6.0,
+    "match_count_distribution": {
+      "1": 119157,
+      "2": 375212,
+      "3": 530841,
+      "4": 484115,
+      "5": 321957,
+      "6": 164868,
+      "7": 63968,
+      "8": 18680,
+      "9": 4205,
+      "10": 534,
+      "11": 37
+    }
+  },
+  "encoding_issues": {
+    "train_source1": {
+      "business_name": 0,
+      "business_address": 3
+    },
+    "train_source2": {
+      "business_name": 0,
+      "business_address": 6
+    },
+    "train_source3": {
+      "business_name": 0,
+      "business_address": 6
+    }
+  },
+  "address_coverage": {
+    "train_source1": {
+      "total_records": 2206821,
+      "records_with_address": 2206821,
+      "address_null_pct": 0.0,
+      "records_with_zip_or_pin": 147257,
+      "zip_coverage_pct": 6.67
+    },
+    "train_source2": {
+      "total_records": 5034616,
+      "records_with_address": 4865649,
+      "address_null_pct": 3.36,
+      "records_with_zip_or_pin": 369140,
+      "zip_coverage_pct": 7.59
+    },
+    "train_source3": {
+      "total_records": 5285603,
+      "records_with_address": 5109687,
+      "address_null_pct": 3.33,
+      "records_with_zip_or_pin": 385727,
+      "zip_coverage_pct": 7.55
+    },
+    "test_source1": {
+      "total_records": 1732544,
+      "records_with_address": 1732544,
+      "address_null_pct": 0.0,
+      "records_with_zip_or_pin": 75634,
+      "zip_coverage_pct": 4.37
+    }
+  },
+  "sample_matched_pairs": [
+    {
+      "s1_id": "S1-965667",
+      "s1_name": "Maure Williams Colombier Inc",
+      "s1_addr": "85 Wayne Avenue, Ticonderoga, NY",
+      "match_id": "S2-681193310",
+      "match_name": "Maure Wilblims Colombier Inc",
+      "match_addr": null
+    },
+    {
+      "s1_id": "S1-965667",
+      "s1_name": "Maure Williams Colombier Inc",
+      "s1_addr": "85 Wayne Avenue, Ticonderoga, NY",
+      "match_id": "S2-743505751",
+      "match_name": "Maure Williams Colombier",
+      "match_addr": null
+    },
+    {
+      "s1_id": "S1-55344266",
+      "s1_name": "Raj Investments LLP",
+      "s1_addr": "6(29), C.I.T. Colony, 2Nd Main Road Mylapore, Chennai, Tamil Nadu",
+      "match_id": "S2-249013014",
+      "match_name": "\u0bb0\u0bbe\u0b9c\u0bcd \u0b87\u0ba9\u0bcd\u0bb5\u0bc6\u0bb8\u0bcd\u0b9f\u0bcd\u0bae\u0bc6\u0ba3\u0bcd\u0b9f\u0bcd\u0bb8\u0bcd \u0b8e\u0bb2\u0bcd\u0b8e\u0bb2\u0bcd\u0baa\u0bbf",
+      "match_addr": "6(29), C.I.T. COLONY, 2ND MAIN ROAD MYLAPORE, CHENNAI, Tamil Nadu"
+    },
+    {
+      "s1_id": "S1-55344266",
+      "s1_name": "Raj Investments LLP",
+      "s1_addr": "6(29), C.I.T. Colony, 2Nd Main Road Mylapore, Chennai, Tamil Nadu",
+      "match_id": "S2-197070651",
+      "match_name": "Raj Investments LLP",
+      "match_addr": "6(29), C.I.T. COLONY, 2ND MAIN ROAD MYLAPORE, CHENNAI, Tamil Nadu"
+    },
+    {
+      "s1_id": "S1-343815751",
+      "s1_name": "Dahlia Power Reliable Scientific LLC",
+      "s1_addr": "630 45th Terrace, Kansas City, MO",
+      "match_id": "S2-790675320",
+      "match_name": "Dahlia Power Reliable",
+      "match_addr": "KANSAS CITY, MO, 630 45ND TERRACE, null"
+    },
+    {
+      "s1_id": "S1-343815751",
+      "s1_name": "Dahlia Power Reliable Scientific LLC",
+      "s1_addr": "630 45th Terrace, Kansas City, MO",
+      "match_id": "S2-479876582",
+      "match_name": "Dahlia Power Reliable Scientific",
+      "match_addr": "45ND TERRACE, null, KANSAS CITY, MO"
+    },
+    {
+      "s1_id": "S1-656753428",
+      "s1_name": "Ss Food Private Limited",
+      "s1_addr": "Af-684, Nandgram Near Mother India Public School. Ph. 989, 9487203, Ghaziabad, Uttar Pradesh",
+      "match_id": "S2-153058913",
+      "match_name": "\u090f\u0938\u090f\u0938 \u092b\u0942\u0921 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+      "match_addr": "AF-0684, NANDGRAM NEAR MOTHER INDIA PUBLIC SCHOOL. PH. 989, GHAZIABAD, 9487203, \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936"
+    },
+    {
+      "s1_id": "S1-656753428",
+      "s1_name": "Ss Food Private Limited",
+      "s1_addr": "Af-684, Nandgram Near Mother India Public School. Ph. 989, 9487203, Ghaziabad, Uttar Pradesh",
+      "match_id": "S2-24659151",
+      "match_name": "\u090f\u0938\u090f\u0938 \u092b\u0942\u0921 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+      "match_addr": "AF-0684, Uttar Pradesh, GHAZIABAD, 9487203"
+    },
+    {
+      "s1_id": "S1-102811957",
+      "s1_name": "Payne Enterprises",
+      "s1_addr": "3315 Fremont Street, Peoria, IL",
+      "match_id": "S2-478959098",
+      "match_name": "Payne \u00c9nterprises",
+      "match_addr": "3315 FREMONT ST, PEORIA, IL"
+    },
+    {
+      "s1_id": "S1-102811957",
+      "s1_name": "Payne Enterprises",
+      "s1_addr": "3315 Fremont Street, Peoria, IL",
+      "match_id": "S2-553508714",
+      "match_name": "Payne Enterpires",
+      "match_addr": "3315 FREMONT ST, PEORIA, IL"
+    }
+  ]
+}
